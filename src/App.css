@@ -1,0 +1,140 @@
+.App header h1 {
+    text-align: center;
+}
+
+.App .button-section {
+    text-align: center;
+}
+
+.App .button-section span {
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(71, 68, 68, 0.3);
+    padding: 50px;
+}
+
+.backdrop .modal {
+    background: #ffffff;
+    border-radius: 5px;
+    max-width: 70%;
+    min-height: 80%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.backdrop .modal .search-input p {
+    border: 2px;
+    border-style: inset;
+    border-color: #e6e6e6;
+    border-image: initial;
+}
+
+.backdrop .modal .search-input p input {
+    width: 96%;
+    padding: 0;
+    border: 0;
+    font-size: 16pt;
+    font-family: 'Gaegu';
+}
+
+.backdrop .modal .search-input p input:focus {
+    outline: none;
+}
+
+.backdrop .modal .search-input p img {
+    vertical-align: middle;
+}
+
+.backdrop .modal .item-section {
+    height: 400px;
+    overflow-y: auto;
+}
+
+.backdrop .modal .item-section .card-item {
+    background: #f3f4f7;
+    margin: 10px;
+    box-shadow: 2px 2px #d5d6dc;
+}
+
+.backdrop .modal .item-section .card-item:hover {
+    box-shadow: 2px 2px #aeaeae;
+}
+
+.backdrop .modal .item-section .card-item .grid-container > .image {
+    grid-area: a;
+}
+
+.backdrop .modal .item-section .card-item .grid-container > .name {
+    grid-area: b;
+    font-size: 16pt;
+}
+
+.backdrop .modal .item-section .card-item .grid-container > .hp {
+    grid-area: c;
+}
+
+.backdrop .modal .item-section .card-item .grid-container > .hp-bar {
+    grid-area: f;
+}
+
+.backdrop .modal .item-section .card-item .grid-container > .str {
+    grid-area: d;
+}
+
+.backdrop .modal .item-section .card-item .grid-container > .str-bar {
+    grid-area: g;
+}
+
+.backdrop .modal .item-section .card-item .grid-container > .weak {
+    grid-area: e;
+}
+
+.backdrop .modal .item-section .card-item .grid-container > .weak-bar {
+    grid-area: h;
+}
+
+.backdrop .modal .item-section .card-item .grid-container > .add-button {
+    grid-area: i;
+    text-align: right;
+    font-size: 16pt;
+    color: #f3f4f7;
+}
+
+.backdrop .modal .item-section .card-item .grid-container > .add-button > span {
+    cursor: pointer;
+}
+
+.backdrop .modal .item-section .card-item:hover .grid-container .add-button {
+    color: #dc7777;
+}
+
+.backdrop .modal .item-section .card-item .grid-container > .happiness-level {
+    grid-area: j;
+}
+
+.backdrop .modal .item-section .card-item .grid-container {
+    padding: 10px;
+    display: grid;
+    grid-template-areas: 
+        "a b . i"
+        "a c f f"
+        "a d g g"
+        "a e h h"
+        "a j j j";
+}
